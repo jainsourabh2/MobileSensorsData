@@ -5,6 +5,11 @@ Assuming standalone mode installation.
 - Apache Kafka
 - Apache Spark
 
+NOTE : After websocket module is installed, comment the lines below in lib/WebSocketClient.js file 
+
+288 this.failhandshake('Expected a Sec-WebSocket........');
+289 return;
+
 2. Goto Apache Kafka path and start the Zookeeper and Kafka Server
 - bin/zookeeper-server-start.sh config/zookeeper.properties
 - bin/kafka-server-start.sh config/server.properties
